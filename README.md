@@ -1,6 +1,6 @@
 # Šta naš api radi?
 Naš API omogućava manipulaciju podacima u okviru baze 'rest' u kojoj su sačuvane novosti i kategorije novosti.
-Imamo definisane GEP/POST/PUT/DELETE rute za oba resursa korišćenjem Method Routing-a
+Imamo definisane GEP/POST/PUT/DELETE rute za oba resursa korišćenjem  [Method Routing-a](https://github.com/tamilov3/iteh21-cas4#method-routing).
 ```php
 Flight::route('GET /novosti', function(){
     #vraća sve novosti
