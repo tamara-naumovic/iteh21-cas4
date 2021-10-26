@@ -16,6 +16,8 @@ API zahtevi su sledeći:
 | DELETE		| /novosti/:id	| Brisanje određene novosti iz baze   |
 | DELETE		| /kategorije/:id |Brisanje određene kategorija iz baze   |
 
+Implementacija:
+
 ```php
 Flight::route('GET /novosti', function(){
     #vraća sve novosti
