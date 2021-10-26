@@ -1,3 +1,41 @@
+# Šta naš api radi?
+Naš API omogućava manipulaciju podacima u okviru baze 'rest' u kojoj su sačuvane novosti i kategorije novosti.
+Imamo definisane GEP/POST/PUT/DELETE rute za oba resursa korišćenjem Method Routing-a
+```php
+Flight::route('GET /novosti', function(){
+    #vraća sve novosti
+});
+
+Flight::route('POST /novosti', function(){
+    #kreira novu novost
+});
+
+Flight::route('GET /novosti/@id', function(){
+    #vraća novost sa prosleđenim id-em
+});
+
+Flight::route('DELETE /novosti/@id', function(){
+    #briše novost sa prosleđenim id-em
+});
+
+Flight::route('GET /kategorije', function(){
+    #vraća sve kategorije
+});
+
+Flight::route('POST /kategorije', function(){
+    #kreira novu kategoriju
+});
+
+Flight::route('GET /kategorije/@id', function(){
+    #vraća kategoriju sa prosleđenim id-em
+});
+
+Flight::route('DELETE /kategorije/@id', function(){
+    #briše kategoriju sa prosleđenim id-em
+});
+```
+
+
 # What is Flight?
 
 Flight is a fast, simple, extensible framework for PHP. Flight enables you to 
